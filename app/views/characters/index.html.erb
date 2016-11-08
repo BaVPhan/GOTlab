@@ -1,0 +1,11 @@
+<h1>GAME OF THRONES CHARACTERS</h1>
+
+<ul>
+  <% @characters.each do |character| %>
+    <li>
+      <p><%= link_to character.title, character_path(character) %></p>
+      <img src="<%= character.img_url %>">
+    </li>
+  <% end %>
+</ul>
+<button><h1><%=link_to "ADD A CHARACTER",  new_character_path%></h1></button>

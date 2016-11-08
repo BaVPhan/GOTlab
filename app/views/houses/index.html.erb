@@ -1,0 +1,11 @@
+<h1>GAME OF THRONES HOUSES</h1>
+
+<ul>
+  <% @houses.each do |house| %>
+    <li>
+      <p><%= link_to house.name, house_path(house) %></p>
+      <img src="<%= house.img_url %>">
+    </li>
+  <% end %>
+</ul>
+<button><h1><%=link_to "ADD HOUSE",  new_house_path%></h1></button>

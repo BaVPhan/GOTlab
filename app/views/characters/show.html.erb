@@ -1,0 +1,7 @@
+<h1><%= @character.title %></h1>
+<h4><%= @character.current_house %></h4>
+
+<img src="<%= @character.img_url %>">
+
+<h2><%= link_to "Edit Character", edit_character_path(@character) %></h2>
+<p><%=link_to "KILL!", character_path(@character), method: :delete%></p>

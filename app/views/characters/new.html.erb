@@ -1,0 +1,12 @@
+<h1>ADD A NEW CHARACTER</h1>
+
+ <%= form_for @character do |f| %>
+   <%= f.label :title %>
+   <%= f.text_field :title %>
+ <br><br>
+   <%= f.label :picture %>
+   <%= f.text_field :img_url%>
+ <br><br>
+<p>Select a house<%= select(:name, :house_id, (['House Stark', 1], ['House Targaryen', 2], ['House Lannister', 3]) %>
+  <%= f.submit%>
+<% end %>

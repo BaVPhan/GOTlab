@@ -1,0 +1,15 @@
+<h1> EDIT THIS HOUSE </h1>
+<%= form_for @house do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <br>
+  <%= f.label :picture %>
+  <%= f.text_field :img_url %>
+  <br>
+  <br>
+  <%= f.label :region %>
+  <%= f.text_field :region %>
+  <br>
+  <%= f.submit %>
+<% end %>
